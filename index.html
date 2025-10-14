@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV. Arsen Karya Abadi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f9fafc;
+      color: #1a1a2e;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 span {
+      color: #2d6ef2;
+    }
+    nav ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #1a1a2e;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #2d6ef2;
+    }
+    .btn-primary {
+      background: #2d6ef2;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 8%;
+      flex-wrap: wrap;
+    }
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+    .hero-text h2 {
+      font-size: 2.8em;
+      margin-bottom: 20px;
+    }
+    .hero-text h2 span {
+      color: #2d6ef2;
+    }
+    .hero-text p {
+      color: #555;
+      margin-bottom: 30px;
+      font-size: 1.05em;
+    }
+    .hero-buttons a {
+      margin-right: 15px;
+    }
+    .hero img {
+      flex: 1;
+      max-width: 450px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Section */
+    section {
+      padding: 80px 8%;
+      background: #fff;
+      margin-top: 40px;
+      border-radius: 20px;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    section p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #f9fafc;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .card h3 {
+      color: #2d6ef2;
+      margin-bottom: 10px;
+    }
+
+    /* Contact */
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .contact form {
+      flex: 1;
+      min-width: 300px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .contact form input, .contact form textarea, .contact form select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    .contact form button {
+      background: #2d6ef2;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .contact-info {
+      flex: 1;
+      min-width: 250px;
+    }
+    .contact-info div {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      background: #fff;
+      color: #777;
+      font-size: 0.9em;
+    }
+
+    @media(max-width:768px){
+      .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .hero img{
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CV. <span>ARSEN KARYA ABADI</span></h1>
+    <nav>
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#legalitas">Legalitas</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+    <a href="#kontak" class="btn-primary">Hubungi Kami</a>
+  </header>
+
+  <section class="hero" id="beranda">
+    <div class="hero-text">
+      <p>Mitra Terpercaya Pengadaan Barang & Jasa</p>
+      <h2>Solusi Pengadaan <span>Profesional</span> untuk Instansi Anda</h2>
+      <p>CV. Arsen Karya Abadi menyediakan barang dan jasa berkualitas tinggi dengan harga kompetitif. Kami berkomitmen memberikan layanan profesional untuk instansi pemerintah dan swasta.</p>
+      <div class="hero-buttons">
+        <a href="#kontak" class="btn-primary">Konsultasi Gratis</a>
+        <a href="#layanan" class="btn-secondary">Lihat Layanan</a>
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Kerjasama">
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Perusahaan</h2>
+    <p>CV. Arsen Karya Abadi bergerak di bidang pengadaan barang dan jasa untuk kebutuhan instansi negeri dan swasta.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Visi</h3>
+        <p>Menjadi penyedia barang dan jasa unggul dan terpercaya dalam mendukung kebutuhan pelanggan dengan kualitas terbaik.</p>
+      </div>
+      <div class="card">
+        <h3>Misi</h3>
+        <p>Menyediakan produk berkualitas tinggi, pelayanan cepat dan profesional, serta menjunjung etika dan transparansi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="layanan">
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk & Layanan KBLI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 40px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #0f172a;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    p.desc {
+      color: #475569;
+      margin-bottom: 30px;
+      font-size: 1rem;
+    }
+
+    .image-box img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .service-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .service-item {
+      background: #ffffff;
+      padding: 20px 25px;
+      border-radius: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      border: 1px solid #e2e8f0;
+    }
+
+    .service-item:hover {
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      transform: translateY(-3px);
+    }
+
+    .service-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1e293b;
+      margin-bottom: 5px;
+    }
+
+    .service-text {
+      font-size: 0.95rem;
+      color: #64748b;
+    }
+
+    .icon {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      background-color: #e0f2fe;
+      color: #0c4a6e;
+      border-radius: 8px;
+      text-align: center;
+      line-height: 28px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .service-header {
+      display: flex;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Produk & Layanan KBLI</h1>
+      <p class="desc">
+        Kami menyediakan berbagai kategori produk dan layanan sesuai dengan 
+        Klasifikasi Baku Lapangan Usaha Indonesia (KBLI) untuk memenuhi kebutuhan instansi Anda.
+      </p>
+
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80" alt="Laptop dan alat tulis">
+      </div>
+    </div>
+
+    <div class="service-list">
+      <div class="service-item">
+        <div class="service-header">
+          <span class="icon">📦</span>
+          <div>
+            <div class="service-title">Peralatan Kantor & ATK</div>
+            <div class="service-text">Alat tulis kantor, perlengkapan administrasi, dan kebutuhan kantor lainnya</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-header">
+          <span class="icon">🏠</span>
+          <div>
+            <div class="service-title">Perlengkapan Rumah Tangga</div>
+            <div class="service-text">Berbagai kebutuhan perlengkapan rumah tangga berkualitas</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-header">
+          <span class="icon">🎵</span>
+          <div>
+            <div class="service-title">Alat Olahraga & Musik</div>
+            <div class="service-text">Peralatan olahraga dan alat musik untuk berbagai kebutuhan</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-header">
+          <span class="icon">💻</span>
+          <div>
+            <div class="service-title">Komputer & Perlengkapan</div>
+            <div class="service-text">Hardware, software, dan aksesori komputer terlengkap</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-header">
+          <span class="icon">🌾</span>
+          <div>
+            <div class="service-title">Peralatan Pertanian</div>
+            <div class="service-text">Mesin dan perlengkapan untuk mendukung sektor pertanian</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-header">
+          <span class="icon">🏗️</span>
+          <div>
+            <div class="service-title">Material Bangunan</div>
+            <div class="service-text">Berbagai macam material dan perlengkapan konstruksi</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+  </section>
+
+  <section id="legalitas">
+    <h2>Legalitas Perusahaan</h2>
+    <p>Perusahaan kami telah terdaftar resmi dan memiliki legalitas lengkap.</p>
+    <div class="cards">
+      <div class="card"><h3>Nomor Induk Berusaha</h3><p>2507240072006</p></div>
+      <div class="card"><h3>NPWP</h3><p>212103121521000</p></div>
+      <div class="card"><h3>PKP</h3><p>S-173/PKP/KPP.320103/2024</p></div>
+    </div>
+  </section>
+
+  <section id="portofolio">
+    </head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Portofolio dan Mitra</h1>
+      <p class="desc">
+        Sebagai penyedia layanan pengadaan barang dan jasa, kami telah dipercaya oleh berbagai instansi dan perusahaan
+        untuk memenuhi kebutuhan mereka secara profesional dan tepat waktu.
+        Portofolio ini mencerminkan komitmen kami terhadap kualitas layanan, efisiensi, dan kepuasan mitra kerja dalam setiap proyek yang kami jalankan.
+      </p>
+
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1740635341299-3b8e3490f546?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074" alt="Laptop dan alat tulis">
+      </div>
+    </div>
+
+    <div class="service-list">
+      <div class="service-item">
+        <div class="service-header">
+          <span class="icon">📦</span>
+          <div>
+            <div class="service-title">UNIVERSITAS JENDERAL SOEDIRMAN PURWOKERTO</div>
+            <div class="service-text">Instansi Pendidikan</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-header">
+          <span class="icon">🏠</span>
+          <div>
+            <div class="service-title">RSUD MARGONO PURWOKETO</div>
+            <div class="service-text">instansi Kesehatan</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-header">
+          <span class="icon">🎵</span>
+          <div>
+            <div class="service-title">Beberapa SD/SMP/MTs/SMA/MA se Banyumas Raya</div>
+            <div class="service-text">Instansi Pendidikan</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-header">
+          <span class="icon">💻</span>
+          <div>
+            <div class="service-title">Beberapa Kantor Desa/Kelurahan se Banyumas Raya</div>
+            <div class="service-text">Insntansi Pemerintah</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-header">
+          <span class="icon">🌾</span>
+          <div>
+            <div class="service-title">Beberapa Kantor Kecamatan se Banyumas Raya</div>
+            <div class="service-text">Instansi Pemerintah</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-header">
+          <span class="icon">🏗️</span>
+          <div>
+            <div class="service-title">Beberapa Perusahaan Swasta se Banyumas Raya</div>
+            <div class="service-text">Instansi Swasta</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+      </section>
+
+  <section id="kontak">
+    <h2>Hubungi Kami</h2>
+    <p>Siap membantu kebutuhan pengadaan Anda.</p>
+    <div class="contact">
+      <form>
+        <input type="text" placeholder="Nama Lengkap">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Nomor Telepon">
+        <select>
+          <option>Pilih Layanan</option>
+          <option>Pengadaan Barang</option>
+          <option>Jasa</option>
+        </select>
+        <textarea placeholder="Tulis pesan Anda..." rows="5"></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+
+      <div class="contact-info">
+        <div><strong>Alamat:</strong><br>Perum Griya Sokaraja Permai Blok D-8, Banyumas</div>
+        <div><strong>Telepon:</strong><br>087862154372</div>
+        <div><strong>Email:</strong><br>arsenaka2401@gmail.com</div>
+        <div><strong>Jam Operasional:</strong><br>Senin–Jumat: 08.00–17.00 WIB</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 CV. Arsen Karya Abadi | All Rights Reserved
+  </footer>
+
+</body>
+</html>
